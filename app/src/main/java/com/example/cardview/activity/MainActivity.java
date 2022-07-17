@@ -24,9 +24,7 @@ private List<Postagem> postagens = new ArrayList<>();
         recyclerPost = findViewById(R.id.recyclerPost);
 
         //Define layout
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        //Colocar layout na horizontal estilo navbar, tambem pode se usar gridlayout para por em por como catalogo
-        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerPost.setLayoutManager( layoutManager );
 
         //define adapter
